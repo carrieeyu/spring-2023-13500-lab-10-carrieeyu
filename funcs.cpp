@@ -161,7 +161,7 @@ bool timeOverlap(TimeSlot ts1, TimeSlot ts2){
   
   int ts1start = minutesSinceMidnight(ts1.startTime);
   int ts2start = minutesSinceMidnight(ts2.startTime);
-  int ts1duration=minutesSinceMidnight(addMinutes(ts1.startTime, ts1.movie.duration));
+  int ts1duration = minutesSinceMidnight(addMinutes(ts1.startTime, ts1.movie.duration));
   //int ts2duration=minutesSinceMidnight(addMinutes(ts2.startTime,ts2.movie.duration));
 
   if(ts1start < ts2start){
